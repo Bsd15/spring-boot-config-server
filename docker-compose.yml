@@ -1,0 +1,8 @@
+version: "3"
+services:
+#  Container for Java
+#  docker run -d --name track-service-config-server -network host spring-boot-java
+  java:
+    build: .
+    container_name: track-service-config-server
+    network_mode: "host"
